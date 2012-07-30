@@ -1,0 +1,658 @@
+/* Custom Screen Styles ---------------------------------------------------------------------------------- */
+
+/* General ---------------------------------------------------------------------------------- */
+
+html,
+body {
+    height:100%;
+    background-color: #f0f5f8;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 81.25%;
+    line-height: 1.4;
+}
+
+a:link,
+a:visited {
+    color: #287098;
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    text-decoration: underline;
+    outline: none;
+}
+
+input[type=text] {
+  font-size: 20px;
+  font-family: Helvetica, sans-serif;
+  padding: 6px;
+}
+
+input[type=submit] {
+  font-size: 20px;
+}
+
+textarea {
+  font-size: 16px;
+  padding: 8px;
+  font-family: Helvetica, sans-serif;
+  height: 150px;
+  width: 500px;
+}
+
+label {
+  color: #fff;
+}
+
+
+/* Chrome ---------------------------------------------------------------------------------- */
+
+.page {
+    min-height: 100%;
+    position: relative;
+}
+
+.hd {
+    background: #1a1a1a; /*url(images/green.png) repeat-x scroll bottom right;*/
+    overflow: hidden;
+    padding: 16px 0 16px 0;
+}
+
+.hd span {
+  margin-left: 30px;
+    color: #fff;
+    font-weight: 100;
+    letter-spacing: 0;
+    /*text-shadow: black 1px 1px 1px;*/
+  font-size: 30px;
+  vertical-align: top;
+}
+
+.navigation {
+    height: 51px;
+    background: #375d81; /* url(images/blue.png) repeat-x scroll;*/
+    overflow: hidden;
+}
+
+.bd {
+    margin-top: 20px;
+    /*padding-bottom: 120px;*/   /* Height of the footer + 20px padding */
+}
+
+.ft {
+/*    position: absolute;*/
+/*    bottom: 0;*/
+/*    width: 100%;*/
+    /*height: 80px;*/   /* Height of the footer */
+    background: #375d81;
+    padding: 10px 0;
+}
+
+/* Blueprint in boxes */
+
+div.border {
+    border-color: #e5e5e5;
+/*    border-color: red;*/
+}
+
+.box {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #eee #ccc #ccc #eee;
+    padding: 19px;
+    background: #fff;
+    -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+/* Two Column with Left Navigation */
+.container-docs .box {
+    padding: 0;
+}
+
+.container-docs .span-6 {
+    padding: 19px;
+}
+
+.container-docs .span-18 {
+    padding: 19px 19px 19px 0;
+}
+
+.box .span-6 {
+    width: 180px;
+    margin-right: 20px;
+}
+
+.box .span-18 {
+    width: 690px;
+    margin-right: 20px;
+}
+
+/* Two Column with Right Boxes */
+.box .span-16 {
+    width: 580px;
+    margin-right: 20px;
+}
+
+.box .span-8 {
+    width: 290px;
+    margin-right: 20px;
+}
+
+/* Two Column separated with a border */
+.box .span-12 {
+    width: 430px;
+    margin-right: 20px;
+}
+
+.box .border {
+    padding-right: 19px;
+    margin-right: 20px;
+}
+
+/* asdf */
+.box .span-10 {
+/*    width: 580px;*/
+/*    margin-right: 20px;*/
+}
+
+.box .span-5 {
+    width: 150px;
+    margin-right: 20px;
+    margin-bottom: 1.5em;
+}
+
+.box .last {
+    margin-right: 0;
+}
+
+.box-feature {
+    padding-bottom: 9px;
+    color: #999;
+    font-size: 1.4em;
+    line-height: 1.5;
+    background-color: #1a1a1a;
+    background-repeat: no-repeat;
+    background-position: right top;
+    -webkit-text-stroke: 1px transparent;
+}
+
+.box-feature h1 {
+    margin-bottom: 15px;
+    color: #fff;
+    font-weight: 100;
+    letter-spacing: 0;
+    text-shadow: black 1px 1px 2px;
+}
+
+.box-feature p {
+    margin-bottom: 15px;
+}
+
+.box-feature a {
+    padding: 1px 5px 3px;
+    color: #fff;
+    background-color: #c30;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#d41), to(#c30));
+    -webkit-border-radius: 5px;
+}
+
+.box-feature a:hover {
+    text-decoration: none;
+    background-color: #d41;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#e52), to(#d41));
+}
+
+.box-feature em {
+    color: #fff;
+    font-style: normal;
+}
+
+/* Place Border on left side of span-*. Requires use of .first instead of .last */
+.reverse-borders .sidebar,
+.reverse-borders .main-content {
+    margin-right: 0;
+    margin-left: 40px;
+}
+
+.reverse-borders .first {
+    margin-left: 0;
+}
+
+.reverse-borders .main-content {
+    margin-left: 0;
+    padding-left: 20px;
+    border-right: none;
+    border-left: 1px solid #e5e5e5;
+}
+
+
+/* Header ---------------------------------------------------------------------------------- */
+
+.hd .container {
+    position: relative;
+    font-size: 1.1em;
+    line-height: 1.75;
+}
+
+.hd,
+.hd a {
+    color: #fff;
+}
+
+.hd .container .user-nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.hd ul {
+    margin: 0;
+    list-style: none;
+}
+
+.hd li {
+    display: inline;
+}
+
+.brand {
+    float: left;
+    padding-right: 55px;
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+}
+
+.hd .brand strong a {
+    float: left;
+    display: block;
+    height: 16px;
+    width: 85px;
+    overflow: hidden;
+    text-indent: -9999em;
+    background: transparent url(images/logo.png) no-repeat;
+    position: relative;
+    margin-top: 5px;
+}
+
+.user-nav {
+    float: right;
+}
+
+
+/* Navigation ---------------------------------------------------------------------------------- */
+
+/*
+Navigation inspired by...
+http://www.oscaralexander.com/tutorials/how-to-make-sexy-buttons-with-css.html
+http://www.filamentgroup.com/lab/update_styling_the_button_element_with_css_sliding_doors_now_with_image_spr/
+*/
+
+.navigation,
+.navigation a {
+    color: #fff;
+}
+
+.navigation ul {
+    margin: 0;
+    list-style: none;
+}
+
+.navigation {
+    font-size: 1.1em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: black 1px 1px 2px;
+}
+
+.navigation ul {
+    padding: 15px 0 0;
+}
+
+.navigation li {
+    float: left;
+}
+
+.navigation a {
+    /*background: transparent url(images/button-right.png) no-repeat scroll -9999px 0;*/
+    display: block;
+    float: left;
+    height: 26px;
+    margin-right: 3px;
+    padding-right: 10px; /* sliding doors padding */
+    text-decoration: none;
+    outline: none;
+font-size: 16px;
+}
+.navigation a:hover {
+    background-position: right -64px;
+  text-decoration: underline;
+/*    background-position: right -32px;*/
+}
+.navigation a:active {
+    color: #fff;
+    background-position: top right;
+}
+.navigation .right {
+  float: right;
+  padding: 15px 0 0;
+  font-size: 16px;
+  font-weight: bold;
+  text-shadow: black 1px 1px 2px;
+}
+body.home .navigation  li.home a,
+body.start .navigation li.start a,
+body.documentation .navigation li.documentation a,
+body.news .navigation li.news a,
+body.help .navigation li.help a,
+body.api-key .navigation li.api-key a {
+    color: #fff;
+    background-position: top right;
+}
+
+.navigation a span {
+    /*background: transparent url(images/button-left.png) no-repeat -9999px 0;*/
+    display: block;
+    line-height: 14px;
+    padding: 4px 0 8px 10px; /* padding (5 + 5) and line-height (14) = height of container (24) */
+}
+.navigation a:hover span {
+    /*background-position: 0 -64px;*/
+/*    background-position: 0 -32px;*/
+}
+.navigation a:active span {
+    background-position: 0 0;
+}
+
+body.home .navigation li.home a span,
+body.start .navigation li.start a span,
+body.documentation .navigation li.documentation a span,
+body.news .navigation li.news a span,
+body.help .navigation li.help a span,
+body.api-key .navigation li.api-key a span {
+    background-position: 0 0;
+}
+
+.navigation .api-key {
+    background: transparent url(images/pipe.gif) no-repeat scroll 8px 4px;
+    padding-left: 20px;
+}
+.navigation .api-key a {
+    background: none;
+}
+.navigation .api-key a span {
+    background: none;
+}
+.navigation .api-key a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+
+/* Contact ---------------------------------------------------------------------------------- */
+.contact {
+    background: #abc8e2;
+    color: #fff;
+}
+.contact .container {
+    padding: 12px;
+    font-size: 1.5em;
+}
+.contact strong {
+    text-transform: uppercase;
+}
+
+
+/* Footer ---------------------------------------------------------------------------------- */
+
+.ft,
+.ft a {
+    color: #fff;
+    font-size: 14px;
+}
+
+.ft p {
+    margin-bottom: .25em;
+}
+
+.ft strong {
+    float: left;
+    clear: left;
+    width: 80px;
+}
+.ft a {
+    padding: 0 5px;
+}
+.copyright {
+    clear: left;
+    margin: 1.5em 0 2em;
+}
+
+
+/* Docs Navigation ---------------------------------------------------------------------------------- */
+
+.flyer {
+/* Uncomment lines to have navigation be fixed on the browser window */
+/*    position: fixed;*/
+/*    width: 199px;*/
+}
+.span-6 h3 {
+    font-size: 1.25em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: .2em;
+}
+
+.left-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.left-nav li a {
+    display: block;
+    padding: 2px 0 2px 6px;
+    margin-bottom: 2px;
+}
+
+.left-nav li a:hover,
+.left-nav li.current a:link {
+    background: #e5e5e5;
+    text-decoration: none;
+}
+
+.container-docs .span-6 {
+    width: 199px;
+    padding-right: 0;
+}
+
+
+/* Content ---------------------------------------------------------------------------------- */
+
+.main-content .container {
+    width: 100%;
+}
+
+h1 {
+    color: #1a1a1a;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+}
+
+h2 {
+    color: #666;
+    margin-bottom: 0;
+    margin-top: 1em;
+}
+.home h2 {
+    margin-top: 0;
+}
+.code-page .main-content h2 {
+    color: #287098;
+    background: #f0f5f8 url(images/heading2.png) repeat-x center center;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f0f5f8), color-stop(0.5, #f0f5f8), color-stop(0.5, #deebf0), to(#f0f5f8));
+    -webkit-border-radius: 5px;
+    margin: 50px 0 0.5em;
+    padding: 5px 10px;
+}
+
+h3 {
+    color: #999;
+    font-size: 1.25em;
+}
+.code-page .main-content h3 {
+    margin-top: 0;
+    margin-bottom: 0.25em;
+    border-top: 1px solid #f2f2f2;
+    padding-top: 2em;
+    color: #d33402;
+    font-weight: bold;
+}
+
+.code-page .main-content h4 {
+    margin-bottom: 0.25em;
+    font-weight: bold;
+}
+
+ul.documentation {
+    list-style: square;
+    color: #287098;
+    margin-bottom: 0;
+    margin-right: 0;
+    min-height: 100px;
+}
+
+code {
+    background-color: #f4f5f5; /* grey */
+    background-color: #ffd; /* yellow */
+}
+
+pre {
+    margin-top: 0;
+}
+
+pre code {
+    display: block;
+    overflow: auto;
+    width: auto;
+    border: 1px solid #e5e5e5;
+    border-width: 1px 0;
+    padding: 10px;
+}
+
+/* Definition Lists */
+
+dl {
+    margin: 10px;
+    border-left: 1px solid #ccc;
+    padding-left: 10px;
+}
+
+dt {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+dd {
+    margin-bottom: 10px;
+    color: #333;
+    font-style: italic;
+}
+
+
+/* Heading anchors */
+
+.anchor {
+/*    float: right;*/
+}
+
+.anchor:link,
+.anchor:visited {
+    border: none;
+    color: #d7d7d7;
+    font-size: .8em;
+    vertical-align: text-top;
+}
+
+* > .anchor:link,
+* > .anchor:visited {
+    visibility: hidden;
+}
+
+h1:hover .anchor,
+h2:hover .anchor,
+h3:hover .anchor,
+h4:hover .anchor,
+h5:hover .anchor,
+h6:hover .anchor {
+    visibility: visible;
+}
+
+/* Call Out Styles */
+
+blockquote.msg {
+    font-style: italic;
+    margin: 0 0 12px;
+    border: 1px solid #ccc;
+    border-width: 0 2px 0 5px;
+    padding: 5px 10px;
+    font-style: normal;
+    line-height: 18px;
+    color:#444;
+}
+blockquote.msg strong {
+    text-transform: uppercase;
+    font-size: .9em;
+    letter-spacing: .15em;
+    padding-right: .5em;
+}
+blockquote.warning,
+blockquote.bug {
+    background-color: #faa1a1; /* red - problem */
+    border-color: #d95858;
+}
+blockquote.note {
+    background-color: #dfefce; /* green - praise */
+    border-color: #8bb978;
+}
+blockquote.tip {
+    background-color: #e2f4f8; /* blue - ask question */
+    border-color: #74a9bd;
+}
+blockquote.deprecated {
+    background-color: #fdf1ce; /* yellow - idea */
+    border-color: #dad759;
+}
+blockquote.update {
+    background-color: #eee; /* grey - update */
+    border-color: #a4a4a4;
+}
+
+
+/* Blog */
+
+.post p {
+  font-size: 14px;
+}
+
+.blog-archive .title {
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.blog-archive .sub-title {
+  font-size: 14px;
+  color: #999;
+}
+
+.servers {
+  float:right;border:2px solid #333;
+}
+
+.brand a img {
+  height: 50px;
+}
